@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Point_experiment</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src="csv.js"></script>
+    <script src="main.js"></script>
+    <style>
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex">
+        <div id="left-container"><form action="test.html" method="post" enctype="multipart/form-data">
+            <input type="file" name="test" onchange="previewFile(this);">
+            </form>
+            <video id="test-video" src="./video/2301120900_10.mp4" controls width="1000"></video>
+        </div>
+        <div id="right-container">
+            <canvas id="canvas">
+        </div>
+    </div>
+</html>
