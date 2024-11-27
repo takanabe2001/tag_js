@@ -25,3 +25,29 @@
 
 ## 推奨環境
 Google Chrome
+
+## How to use
+1. create a video folder and put the videos you want to annotate. 
+2. download the Live Server extension to VSCode.
+3. display index_video.html on VSCode, right-click on it, and select Open with Live Server. 
+4. enter a user name (this will be added to the end of the name of the output CSV file).
+5. click “Select File” in the upper left corner of the screen and select the video you wish to annotate.
+6. When the video is played to the end, the annotation result will be output as a CSV file. 
+
+    (Output file name: video_user_name.csv)
+
+## About emotion labels
+Emotion labels were created based on Russell's circle model.
+
+Emotion intensity is assumed to be weaker in the center and stronger toward the outside.
+
+Mouse coordinates are acquired every second. The acquired contents are [x,y,time].
+
+## Other functions
+Video can be paused and played by left-clicking.
+
+If you make a mistake in labeling and want to correct it, you can pause the video and then return to the seek bar to re-label it.
+
+
+## Recommended environment
+Google Chrome
